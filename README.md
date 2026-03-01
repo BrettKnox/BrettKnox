@@ -59,5 +59,5 @@ Measured latency, throughput, and scaling behavior under load conditions.
 
 ## Contact
 
-LinkedIn: https://linkedin.com/in/yourlink  
+LinkedIn: https://linkedin.com/in/brettwknox
 Email: BrettKnox2003@gmail.com
