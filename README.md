@@ -19,19 +19,19 @@ My work focuses on model evaluation, feature engineering, database design, and s
 
 ## Featured Projects
 
-### [Machine Learning & Classification Pipeline] 
+### Machine Learning & Classification Pipeline [Coffee Quality Kaggle Repository](https://github.com/BrettKnox/Coffee-Quality-Kaggle)
 Designed a full ML workflow including preprocessing, feature selection, cross-validation, and model benchmarking.  
 Implemented KNN, Random Forest, Logistic Regression, AdaBoost, and baseline comparisons.  
 Structured experiments for reproducibility and controlled evaluation.
-[Coffee Quality Kaggle Repository](https://github.com/BrettKnox/Coffee-Quality-Kaggle)
 
 
-### Audio CRNN Deep Learning Experiment
+
+### Audio CRNN Deep Learning Experiment (will upload publicly once the research is published)
 Engineered preprocessing pipeline converting raw audio into spectrogram representations.  
 Trained Convolutional Recurrent Neural Networks and evaluated generalization impact of preprocessing variations.  
 Focused on experimental structure and accuracy analysis.
 
-### PostgreSQL Database Application
+### PostgreSQL Database Application [Main E-Commerce App Repository](https://github.com/BrettKnox/Eccomerce-App)
 Designed normalized relational schema with indexing, triggers, and stored logic.  
 Built validated query interface and improved performance using execution plan analysis.
 
