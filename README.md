@@ -19,10 +19,12 @@ My work focuses on model evaluation, feature engineering, database design, and s
 
 ## Featured Projects
 
-### Machine Learning & Classification Pipeline
+### [Machine Learning & Classification Pipeline] 
 Designed a full ML workflow including preprocessing, feature selection, cross-validation, and model benchmarking.  
 Implemented KNN, Random Forest, Logistic Regression, AdaBoost, and baseline comparisons.  
 Structured experiments for reproducibility and controlled evaluation.
+[Coffee Quality Kaggle Repository](https://github.com/BrettKnox/Coffee-Quality-Kaggle)
+
 
 ### Audio CRNN Deep Learning Experiment
 Engineered preprocessing pipeline converting raw audio into spectrogram representations.  
