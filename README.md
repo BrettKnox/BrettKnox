@@ -35,7 +35,7 @@ Focused on experimental structure and accuracy analysis.
 Designed normalized relational schema with indexing, triggers, and stored logic.  
 Built validated query interface and improved performance using execution plan analysis.
 
-### Concurrent Socket Server Benchmarking
+### Concurrent Socket Server Benchmarking [Concurrent Socket Server](https://github.com/BrettKnox/Concurrent-Socket-Server)
 Developed iterative and multithreaded servers handling concurrent client requests.  
 Measured latency, throughput, and scaling behavior under load conditions.
 
