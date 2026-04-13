@@ -53,7 +53,7 @@ Full end-to-end ML workflow — preprocessing, feature selection, cross-validati
 
 ---
 
-### 🎧 Audio CRNN Deep Learning *(publishing pending)*
+### 🎧 Audio CRNN Deep Learning 
 
 Preprocessing pipeline converting raw audio into spectrogram representations, fed into Convolutional Recurrent Neural Networks. Evaluated the generalization impact of different preprocessing strategies with structured accuracy analysis.
 
