@@ -26,7 +26,7 @@
 
 ---
 
-### 🏥 Silent De-escalation in the ICU ·  [`silent-icu-shifts`](https://github.com/BrettKnox/silent-icu-shifts)
+### 🏥 Silent De-escalation in the ICU · [`silent-icu-shifts`](https://github.com/BrettKnox/silent-icu-shifts)
 
 > **MIMIC-IV Datathon 2026** — multi-institutional research collaboration
 
@@ -44,6 +44,25 @@ Detecting when ICU care teams quietly shift toward comfort care before the chart
 
 ---
 
+### 🧠 Predicting Poor Mental Health at the District Level · [`Vulnrability-Dashboard`](https://github.com/BrettKnox/Vulnrability-Dashboard)
+
+> **CAP 4922 — Data Science Capstone** · University of North Florida
+
+Predicting poor adult mental health outcomes across 239 city council districts in 14 U.S. cities using district-level socioeconomic, environmental, and healthcare access indicators. The end product is a community-facing interactive dashboard built to surface risk without exposing proprietary data.
+
+- Ridge regression with city fixed effects achieved **CV R² = 0.903** (RMSE = 0.75); city dummies alone pushed R² from ~0.70 → 0.93, revealing how much unmeasured local context drives outcomes
+- Engineered population-normalized feature rates (poverty, education, insurance) and log-transformed right-skewed environmental indices; screened via VIF and Pearson correlation
+- Constructed a **PCA-weighted composite risk index (0–100)** across 4 principal components, weighted by absolute correlation with the target — final index r = 0.688 (p < 0.001)
+- Implemented **Leave-One-City-Out CV (LOCO-CV)** to test cross-city generalization; exposed structural limits for cities with unusual profiles (Miami, Nashville)
+- Built an interactive **D3.js choropleth dashboard** with composite index coloring, cluster toggle, risk range slider, district rankings table, and CSV upload for custom score mapping
+
+[![Python](https://img.shields.io/badge/Python-grey?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-grey?style=flat-square&logo=scikitlearn&logoColor=white)](https://scikit-learn.org)
+[![D3.js](https://img.shields.io/badge/D3.js-grey?style=flat-square&logo=d3dotjs&logoColor=white)](https://d3js.org)
+[![Ridge](https://img.shields.io/badge/Model-Ridge_%2B_Fixed_Effects-4a90d9?style=flat-square)]()
+
+---
+
 ### ☕ Coffee Quality ML Pipeline · [`Coffee-Quality-Kaggle`](https://github.com/BrettKnox/Coffee-Quality-Kaggle)
 
 Full end-to-end ML workflow — preprocessing, feature selection, cross-validation, and model benchmarking across KNN, Random Forest, Logistic Regression, AdaBoost, and baselines. Structured for reproducibility and controlled evaluation.
@@ -53,7 +72,7 @@ Full end-to-end ML workflow — preprocessing, feature selection, cross-validati
 
 ---
 
-### 🎧 Audio CRNN Deep Learning 
+### 🎧 Audio CRNN Deep Learning
 
 Preprocessing pipeline converting raw audio into spectrogram representations, fed into Convolutional Recurrent Neural Networks. Evaluated the generalization impact of different preprocessing strategies with structured accuracy analysis.
 
