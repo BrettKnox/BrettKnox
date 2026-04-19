@@ -72,11 +72,14 @@ Full end-to-end ML workflow — preprocessing, feature selection, cross-validati
 
 ---
 
-### 🎧 Audio CRNN Deep Learning
+### 🎧 ARTIST-20 · Multi-Modal Neural Artist Identification
+End-to-end Music Information Retrieval pipeline for closed-set artist classification across 20 artists and ~1,413 tracks from the Artist20 benchmark. Fuses three complementary views of the same 3-second audio window: a **CRNN** (4 conv layers + SE recalibration blocks + bidirectional GRU + learned attention pooling) with **topological data analysis (TDA)** persistence features fused via a per-clip learned soft gate; a fine-tuned **MERT-v1-95M** music foundation model (~95M params) with a differentiable convex combination over all 13 transformer layers; and an **EfficientNet-B0** vision backbone operating on novel 3-channel RGB audio images where R=log-mel, G=CQT, and B=Chroma CENS. All heads are temperature-calibrated on a validation holdout and fused by a logistic regression meta-learner trained on stacked logits. Preprocessing pipeline produces GPU-batched float16 mel and image shards, 8-D TDA persistence vectors, and a full manifest with deterministic train/val/test splits. Training uses Mixup (α=0.4), SpecAugment, OneCycleLR, label smoothing, and mixed-precision throughout.
 
-Preprocessing pipeline converting raw audio into spectrogram representations, fed into Convolutional Recurrent Neural Networks. Evaluated the generalization impact of different preprocessing strategies with structured accuracy analysis.
-
-[![PyTorch](https://img.shields.io/badge/PyTorch-grey?style=flat-square&logo=pytorch&logoColor=white)]()
+[![PyTorch](https://img.shields.io/badge/PyTorch-grey?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![HuggingFace](https://img.shields.io/badge/MERT--v1--95M-grey?style=flat-square&logo=huggingface&logoColor=white)](https://huggingface.co/m-a-p/MERT-v1-95M)
+[![Librosa](https://img.shields.io/badge/Librosa-grey?style=flat-square)](https://librosa.org/)
+[![TDA](https://img.shields.io/badge/TDA-grey?style=flat-square)](https://giotto-ai.github.io/gtda-docs/)
+[![timm](https://img.shields.io/badge/timm-grey?style=flat-square)](https://github.com/huggingface/pytorch-image-models)
 
 ---
 
