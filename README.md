@@ -1,136 +1,70 @@
-<div align="center">
+# Brett Knox
 
-```
- ██████╗ ██████╗ ███████╗████████╗████████╗    ██╗  ██╗███╗   ██╗ ██████╗ ██╗  ██╗
- ██╔══██╗██╔══██╗██╔════╝╚══██╔══╝╚══██╔══╝    ██║ ██╔╝████╗  ██║██╔═══██╗╚██╗██╔╝
-██████╔╝██████╔╝█████╗     ██║      ██║       █████╔╝ ██╔██╗ ██║██║   ██║ ╚███╔╝
-██╔══██╗██╔══██╗██╔══╝     ██║      ██║       ██╔═██╗ ██║╚██╗██║██║   ██║ ██╔██╗
- ██████╔╝██║  ██║███████╗   ██║      ██║       ██║  ██╗██║ ╚████║╚██████╔╝██╔╝ ██╗
- ╚═════╝ ╚═╝  ╚═╝╚══════╝   ╚═╝      ╚═╝       ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝
-```
+**Data Science · Machine Learning · Systems Engineering**
 
-### Data Science · Machine Learning · Systems Engineering
+I build things that run on hardware people already own, and I measure them instead of
+claiming them. Most of what is here has a number attached, and the number came from a
+run, not an estimate.
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-wukoric.com-1f6feb?style=flat-square)](https://wukoric.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-brettwknox-0a66c2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/brettwknox)
 [![Email](https://img.shields.io/badge/Email-brettknox2003%40gmail.com-ea4335?style=flat-square&logo=gmail&logoColor=white)](mailto:BrettKnox2003@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-BrettKnox-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BrettKnox)
-
-*I build reproducible machine learning systems, structured data pipelines,*
-*and performance-driven software.*
-
-</div>
 
 ---
 
-## Featured Projects
+## Current work
+
+| Project | What it is | The number |
+|---|---|---|
+| [**open-problems-lab**](https://github.com/BrettKnox/open-problems-lab) | 12 open problems in maths and computational theory, each with a machine-checked Lean 4 statement that CI compiles | First known formalization of **integer complexity**, no `sorry`; ‖2ⁿ‖ = 2n **proved for n ≤ 9**; **no odd covering system has lcm ≤ 10⁶** |
+| [**cue**](https://github.com/BrettKnox/cue) | Live transcription and recall for conversations. The audio never leaves the phone: it asks for the on-device recogniser by name and refuses to record rather than fall back to a cloud one | Accessibility audit drives the app across **54 screen states**, asserting touch targets, contrast against the real composited backdrop, and accessible names. **0 failures**, and the audit is proven to fail |
 
 ---
 
-### 🏥 Silent De-escalation in the ICU · [`silent-icu-shifts`](https://github.com/BrettKnox/silent-icu-shifts)
+## Selected earlier work
 
-> **MIMIC-IV Datathon 2026** — multi-institutional research collaboration
+### Silent De-escalation in the ICU · [`silent-icu-shifts`](https://github.com/BrettKnox/silent-icu-shifts)
 
-Detecting when ICU care teams quietly shift toward comfort care before the chart ever reflects it. Working across 94,000+ ICU stays in MIMIC-IV, the project builds a novel *Palliative-ness Score* — a residualized composite of lab velocity, diagnostic diversity, clinical engagement, and specialist integration — to surface a behavioral gap that standard quality audits miss entirely.
+> **MIMIC-IV Datathon 2026**: multi-institutional research collaboration
 
-- Engineered temporal bin features (3 × 24h windows + bin-to-bin deltas) over the full MIMIC-IV cohort using BigQuery and DuckDB
-- Identified **1,217 silent candidates** (2.8% of never-transition population) whose care patterns match the palliative signature with no formal order on record
-- Built and evaluated XGBoost, Random Forest, Ridge, and Lasso pipelines for long-stay prediction (≥ 21 days); XGBoost achieved **AUPRC 0.557** on a held-out 20% partition
-- Validated behavioral signal leads formal documentation by **~48 hours**, with 42% of the total de-escalation shift occurring before any chart update
+Detecting when ICU care teams quietly shift toward comfort care before the chart ever
+reflects it. Across 94,000+ ICU stays in MIMIC-IV, the project builds a *Palliative-ness
+Score*: a residualized composite of lab velocity, diagnostic diversity, clinical
+engagement, and specialist integration, to surface a behavioral gap standard quality
+audits miss.
 
-[![Python](https://img.shields.io/badge/Python-3.8-1a1a2e?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![XGBoost](https://img.shields.io/badge/XGBoost-best_model-e07b39?style=flat-square)](https://xgboost.readthedocs.io/)
-[![MIMIC-IV](https://img.shields.io/badge/Data-MIMIC--IV_v3.1-0a3f6e?style=flat-square)](https://physionet.org/content/mimiciv/)
-[![DuckDB](https://img.shields.io/badge/Engine-DuckDB-ffd700?style=flat-square)](https://duckdb.org)
+- Temporal bin features (3 × 24h windows plus bin-to-bin deltas) over the full cohort in BigQuery and DuckDB
+- **1,217 silent candidates** identified (2.8% of the never-transition population) whose care patterns match the palliative signature with no formal order on record
+- XGBoost, Random Forest, Ridge and Lasso evaluated for long-stay prediction (≥ 21 days); XGBoost reached **AUPRC 0.557** on a held-out 20% partition
+- Behavioral signal leads formal documentation by **~48 hours**, with 42% of the de-escalation shift occurring before any chart update
 
----
+### Predicting Poor Mental Health at the District Level · [`Vulnrability-Dashboard`](https://github.com/BrettKnox/Vulnrability-Dashboard)
 
-### 🧠 Predicting Poor Mental Health at the District Level · [`Vulnrability-Dashboard`](https://github.com/BrettKnox/Vulnrability-Dashboard)
+> CAP 4922 Data Science Capstone · University of North Florida
 
-> **CAP 4922 — Data Science Capstone** · University of North Florida
+239 city council districts across 14 US cities, predicted from socioeconomic,
+environmental and healthcare-access indicators.
 
-Predicting poor adult mental health outcomes across 239 city council districts in 14 U.S. cities using district-level socioeconomic, environmental, and healthcare access indicators. The end product is a community-facing interactive dashboard built to surface risk without exposing proprietary data.
-
-- Ridge regression with city fixed effects achieved **CV R² = 0.903** (RMSE = 0.75); city dummies alone pushed R² from ~0.70 → 0.93, revealing how much unmeasured local context drives outcomes
-- Engineered population-normalized feature rates (poverty, education, insurance) and log-transformed right-skewed environmental indices; screened via VIF and Pearson correlation
-- Constructed a **PCA-weighted composite risk index (0–100)** across 4 principal components, weighted by absolute correlation with the target — final index r = 0.688 (p < 0.001)
-- Implemented **Leave-One-City-Out CV (LOCO-CV)** to test cross-city generalization; exposed structural limits for cities with unusual profiles (Miami, Nashville)
-- Built an interactive **D3.js choropleth dashboard** with composite index coloring, cluster toggle, risk range slider, district rankings table, and CSV upload for custom score mapping
-
-[![Python](https://img.shields.io/badge/Python-grey?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-grey?style=flat-square&logo=scikitlearn&logoColor=white)](https://scikit-learn.org)
-[![D3.js](https://img.shields.io/badge/D3.js-grey?style=flat-square&logo=d3dotjs&logoColor=white)](https://d3js.org)
-[![Ridge](https://img.shields.io/badge/Model-Ridge_%2B_Fixed_Effects-4a90d9?style=flat-square)]()
-
----
-
-### ☕ Coffee Quality ML Pipeline · [`Coffee-Quality-Kaggle`](https://github.com/BrettKnox/Coffee-Quality-Kaggle)
-
-Full end-to-end ML workflow — preprocessing, feature selection, cross-validation, and model benchmarking across KNN, Random Forest, Logistic Regression, AdaBoost, and baselines. Structured for reproducibility and controlled evaluation.
-
-[![Python](https://img.shields.io/badge/Python-grey?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-grey?style=flat-square&logo=scikitlearn&logoColor=white)](https://scikit-learn.org)
-
----
-
-### 🎧 ARTIST-20 · Multi-Modal Neural Artist Identification
-End-to-end Music Information Retrieval pipeline for closed-set artist classification across 20 artists and ~1,413 tracks from the Artist20 benchmark. Fuses three complementary views of the same 3-second audio window: a **CRNN** (4 conv layers + SE recalibration blocks + bidirectional GRU + learned attention pooling) with **topological data analysis (TDA)** persistence features fused via a per-clip learned soft gate; a fine-tuned **MERT-v1-95M** music foundation model (~95M params) with a differentiable convex combination over all 13 transformer layers; and an **EfficientNet-B0** vision backbone operating on novel 3-channel RGB audio images where R=log-mel, G=CQT, and B=Chroma CENS. All heads are temperature-calibrated on a validation holdout and fused by a logistic regression meta-learner trained on stacked logits. Preprocessing pipeline produces GPU-batched float16 mel and image shards, 8-D TDA persistence vectors, and a full manifest with deterministic train/val/test splits. Training uses Mixup (α=0.4), SpecAugment, OneCycleLR, label smoothing, and mixed-precision throughout.
-
-[![PyTorch](https://img.shields.io/badge/PyTorch-grey?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![HuggingFace](https://img.shields.io/badge/MERT--v1--95M-grey?style=flat-square&logo=huggingface&logoColor=white)](https://huggingface.co/m-a-p/MERT-v1-95M)
-[![Librosa](https://img.shields.io/badge/Librosa-grey?style=flat-square)](https://librosa.org/)
-[![TDA](https://img.shields.io/badge/TDA-grey?style=flat-square)](https://giotto-ai.github.io/gtda-docs/)
-[![timm](https://img.shields.io/badge/timm-grey?style=flat-square)](https://github.com/huggingface/pytorch-image-models)
-
----
-
-### 🛒 PostgreSQL E-Commerce Application · [`Eccomerce-App`](https://github.com/BrettKnox/Eccomerce-App)
-
-Normalized relational schema with indexing, triggers, and stored logic. Built a validated query interface and improved performance using execution plan analysis.
-
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?style=flat-square&logo=postgresql&logoColor=white)](https://postgresql.org)
-[![SQL](https://img.shields.io/badge/SQL-grey?style=flat-square)]()
-
----
-
-### ⚡ Concurrent Socket Server Benchmarking · [`Concurrent-Socket-Server`](https://github.com/BrettKnox/Concurrent-Socket-Server)
-
-Iterative and multithreaded servers handling concurrent client requests. Measured latency, throughput, and scaling behavior under load — focused on where the performance actually breaks.
-
-[![Java](https://img.shields.io/badge/Java-grey?style=flat-square&logo=openjdk&logoColor=white)]()
+- Ridge with city fixed effects reached **CV R² = 0.903** (RMSE 0.75). City dummies alone moved R² from ~0.70 to 0.93, which is itself the finding: unmeasured local context dominates
+- PCA-weighted composite risk index (0-100) over 4 components, final index r = 0.688 (p < 0.001)
+- **Leave-One-City-Out CV** to test cross-city generalization, which exposed where it breaks (Miami, Nashville)
+- Interactive D3.js choropleth with cluster toggle, risk slider, rankings and CSV upload
 
 ---
 
 ## Stack
 
-<div align="center">
-
-| Languages | Databases | Tools & Platforms | Concepts |
-|:---:|:---:|:---:|:---:|
-| Python · Java · SQL | PostgreSQL · DuckDB | Git · Google Colab | ML Pipelines |
-| R · SAS · MATLAB | BigQuery | VSCode · MATLAB | Statistical Modeling |
-| | | | Concurrent Systems |
-
-</div>
+| Languages | Data | Tools | Areas |
+|---|---|---|---|
+| Python · Java · SQL · Lean 4 | PostgreSQL · DuckDB · BigQuery · SQLite | Git · React Native · Vulkan · Cloudflare Workers | ML pipelines · statistical modelling · formal verification · accessibility · concurrent systems |
 
 ---
 
-## Current Focus
+## What I care about
 
-```
-  ┌─────────────────────────────────────────────────────┐
-  │  Advanced ML system design                          │
-  │  Model evaluation frameworks                        │
-  │  Large-scale experiment structuring                 │
-  │  Performance-conscious software architecture        │
-  └─────────────────────────────────────────────────────┘
-```
+Measuring rather than guessing. An accessibility audit that has never been seen failing
+proves nothing, so mine is deliberately broken first. A benchmark extrapolated from best-case
+step times gets re-run for twelve minutes to find out it was 7% optimistic. A privacy claim
+gets checked against the network calls the app actually makes.
 
----
-
-<div align="center">
-<sub>
-  <a href="mailto:BrettKnox2003@gmail.com">BrettKnox2003@gmail.com</a>
-  · 
-  <a href="https://linkedin.com/in/brettwknox">linkedin.com/in/brettwknox</a>
-</sub>
-</div>
+<sub><a href="mailto:BrettKnox2003@gmail.com">BrettKnox2003@gmail.com</a> · <a href="https://linkedin.com/in/brettwknox">linkedin.com/in/brettwknox</a> · <a href="https://wukoric.com">wukoric.com</a></sub>
