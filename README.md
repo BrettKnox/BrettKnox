@@ -17,8 +17,8 @@ run, not an estimate.
 | Project | What it is | The number |
 |---|---|---|
 | [**open-problems-lab**](https://github.com/BrettKnox/open-problems-lab) | 12 open problems in maths and computational theory, each with a machine-checked Lean 4 statement that CI compiles | First known formalization of **integer complexity**, no `sorry`; ‖2ⁿ‖ = 2n **proved for n ≤ 9**; **no odd covering system has lcm ≤ 10⁶** |
-| [**vkgrad**](https://github.com/BrettKnox/vkgrad) | A training stack for GPUs that are not NVIDIA, built on Vulkan compute. Cooperative matrix was already used for inference; this runs a backward pass on it | A **315.4M-parameter** transformer trains on an integrated laptop GPU in **7.31 GiB**, no CUDA and no ROCm. MNIST to **97.69%**, **5.09x** faster than the CPU sharing the same die |
-| [**cue**](https://github.com/BrettKnox/cue) | Live transcription and recall for conversations. The audio never leaves the phone: it asks for the on-device recogniser by name and refuses to record rather than fall back to a cloud one | Accessibility audit drives the app across **54 screen states**, asserting touch targets, contrast against the real composited backdrop, and accessible names. **0 failures**, and the audit is proven to fail |
+| [**vkgrad**](https://github.com/BrettKnox/vkgrad) | A training stack for GPUs that are not NVIDIA, built on Vulkan compute. Cooperative matrix was already used for inference; this runs a backward pass on it | A **315.4M-parameter** transformer trains on an integrated laptop GPU in **7.31 GiB**, no CUDA and no ROCm. MNIST to **97.6%**, **5.3x** faster than the CPU sharing the same die ([5 runs, ranges recorded](https://github.com/BrettKnox/vkgrad/blob/master/bench/mnist-repro.json)) |
+| [**cue**](https://github.com/BrettKnox/cue) | Live transcription and recall for conversations. The audio never leaves the phone: it asks for the on-device recogniser by name and refuses to record rather than fall back to a cloud one | Accessibility audit drives the app across **54 screen states**, asserting touch targets, contrast against the real composited backdrop, and accessible names. [**0 failures**](https://github.com/BrettKnox/cue/blob/master/docs/audit-result.json), and the audit is proven to fail |
 
 ---
 
@@ -39,7 +39,7 @@ audits miss.
 - XGBoost, Random Forest, Ridge and Lasso evaluated for long-stay prediction (≥ 21 days); XGBoost reached **AUPRC 0.557** on a held-out 20% partition
 - Behavioral signal leads formal documentation by **~48 hours**, with 42% of the de-escalation shift occurring before any chart update
 
-### Predicting Poor Mental Health at the District Level · [`Vulnrability-Dashboard`](https://github.com/BrettKnox/Vulnrability-Dashboard)
+### Predicting Poor Mental Health at the District Level · [`vulnerability-dashboard`](https://github.com/BrettKnox/vulnerability-dashboard)
 
 > CAP 4922 Data Science Capstone · University of North Florida
 
