@@ -2,12 +2,14 @@
 
 **Data Science · Machine Learning · Systems Engineering**
 
+Software and automation engineer in Jacksonville, Florida, and founder of Wukoric LLC.
 I build things that run on hardware people already own, and I measure them instead of
 claiming them. Most of what is here has a number attached, and the number came from a
 run, not an estimate.
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-wukoric.com-1f6feb?style=flat-square)](https://wukoric.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-brettwknox-0a66c2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/brettwknox)
+[![Resume](https://img.shields.io/badge/Resume-PDF-555555?style=flat-square)](https://wukoric.com/assets/Brett_Knox_Resume.pdf)
 [![Email](https://img.shields.io/badge/Email-brettknox2003%40gmail.com-ea4335?style=flat-square&logo=gmail&logoColor=white)](mailto:BrettKnox2003@gmail.com)
 
 ---
@@ -17,8 +19,10 @@ run, not an estimate.
 | Project | What it is | The number |
 |---|---|---|
 | [**open-problems-lab**](https://github.com/BrettKnox/open-problems-lab) | 12 open problems in maths and computational theory, each with a machine-checked Lean 4 statement that CI compiles | First known formalization of **integer complexity**, no `sorry`; ‖2ⁿ‖ = 2n **proved for n ≤ 9**; **no odd covering system has lcm ≤ 10⁶** |
-| [**vkgrad**](https://github.com/BrettKnox/vkgrad) | A training stack for GPUs that are not NVIDIA, built on Vulkan compute. Cooperative matrix was already used for inference; this runs a backward pass on it | A **315.4M-parameter** transformer trains on an integrated laptop GPU in **7.31 GiB**, no CUDA and no ROCm. MNIST to **97.6%**, **5.3x** faster than the CPU sharing the same die ([5 runs, ranges recorded](https://github.com/BrettKnox/vkgrad/blob/master/bench/mnist-repro.json)) |
-| [**cue**](https://github.com/BrettKnox/cue) | Live transcription and recall for conversations. The audio never leaves the phone: it asks for the on-device recogniser by name and refuses to record rather than fall back to a cloud one | Accessibility audit drives the app across **54 screen states**, asserting touch targets, contrast against the real composited backdrop, and accessible names. [**0 failures**](https://github.com/BrettKnox/cue/blob/master/docs/audit-result.json), and the audit is proven to fail |
+| [**vkgrad**](https://github.com/BrettKnox/vkgrad) | A training stack for GPUs that are not NVIDIA, built on Vulkan compute. Cooperative matrix was already used for inference; this runs a backward pass on it | A **315.4M-parameter** transformer trains on an integrated laptop GPU in **7.31 GiB**, no CUDA and no ROCm (one run, not yet reproduced). MNIST to **97.6%**, **5.3x** faster than the CPU sharing the same die ([5 runs, ranges recorded](https://github.com/BrettKnox/vkgrad/blob/master/bench/mnist-repro.json)) |
+| [**cue**](https://github.com/BrettKnox/cue) | Live transcription and recall for conversations. By default the audio never leaves the phone: it asks for the on-device recogniser by name and refuses to record rather than fall back to a cloud one | Accessibility audit drives the app across **54 screen states**, asserting touch targets, contrast against the real composited backdrop, and accessible names. [**0 failures**](https://github.com/BrettKnox/cue/blob/master/docs/audit-result.json), and the audit is proven to fail |
+| [**OpenArm**](https://github.com/BrettKnox/OpenArm) | Offline programming for industrial robot arms: load a URDF, teach a path, check it for collisions against imported STEP/STL parts, export URScript or ABB RAPID | Generated URScript runs against the official Universal Robots simulator, and one command (`npm run validate:ursim`) confirms the arm reaches the target from realtime joint feedback |
+| [**sunny-dispatch**](https://github.com/BrettKnox/sunny-dispatch) | Routes LLM sub-tasks by what the task is, using editable rules: grunt work to a free local model, judgement to a strong one. CLI and MCP server | **Zero tokens** spent on the routing decision, **zero dependencies** (Node builtins only) |
 
 ---
 
